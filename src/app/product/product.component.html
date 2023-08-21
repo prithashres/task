@@ -1,0 +1,19 @@
+<div class="card">
+    <h4 class="title">{{ title }}</h4>
+    <ng-container *ngIf="showDetails; else showMoreButton">
+      <ng-container *ngTemplateOutlet="detailsTemplate"></ng-container>
+    </ng-container>
+    <ng-template #showMoreButton>
+      <button class="btn btn-more" (click)="showMore()">Show More</button>
+    </ng-template>
+    <ng-template #detailsTemplate>
+      <ng-content></ng-content>
+    </ng-template>
+  </div>
+
+<!-- <div class="card">
+    <ng-content></ng-content>
+    <p class="'summary" >Electronic device means an item that operates by controlling the flow of electrons or other electrically charged particles in circuits, using interconnections such as resistors, inductors, capacitors, diodes, switches, transistors, or integrated circuits.</p>
+    <button class="btn btn-more">Show More</button>
+</div> -->
+

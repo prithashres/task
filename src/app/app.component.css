@@ -1,0 +1,30 @@
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: bisque;
+    color: black;
+    border: 1px solid black;
+    height:30%;
+}
+
+.cardtemp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: bisque;
+    color: black;
+    border: 1px solid black;
+    height:30%;
+}
+
+.container{
+    padding:20px 30px;
+    background-color: #eee;
+}
+
+.more-products{
+    display:flex;
+}
